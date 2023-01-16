@@ -1,0 +1,9 @@
+<h1>Add New Book</h1>
+<form action="/library/new-b/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add">
+    {% if msg %}
+        {{ msg }}
+    {% endif %}
+</form>

@@ -1,0 +1,12 @@
+<h1>New Loan</h1>
+<form action="/library/new-l/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add">
+    {% if msg %}
+        {{ msg }}
+    {% endif %}
+    <p><strong> Book Type 1:</strong>Max. To 3 Days Only.</p>
+    <p><strong> Book Type 2:</strong>Max. To 5 Days Only.</p>
+    <p><strong> Book Type 3:</strong>Max. To 10 Days Only.</p>
+</form>

@@ -1,0 +1,19 @@
+<h1>Our Books:</h1>
+{% if latest_books_list %}
+    <ul>
+    {% for book in latest_books_list %}
+        <p>{{ book.book_name }}</p>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No books are available.</p>
+{% endif %}
+
+<li><a href="/library/book_detail"><strong> Books Details </strong></a></li>
+<li><a href="/library/add_book"><strong> Add New Book</strong></a></li>
+<p>-</p>
+<li><a href="/library/customers"><strong> Customers</strong></a></li>
+<p>-</p>
+<li><a href="/library/loans"><strong> Loans </strong></a></li>
+
+

@@ -1,0 +1,8 @@
+<h1>Customers</h1>
+<ul>
+{% for cust in customers_list %}
+    <p>{{ cust.full_name }}</p>
+{% endfor %}
+<li><a href="/library/cust_detail"><strong> Customers Details </strong></a></li>
+<li><a href="/library/add_cust"><strong> Add New Customer </strong></a></li>
+</ul>

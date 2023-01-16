@@ -1,0 +1,9 @@
+<h1>Customers Details</h1>
+<ul>
+{% for cust in detail_list %}
+    <p><strong> Customer Full Name: </strong> {{ cust.full_name }} </p>
+    <p><strong> Customer ID: </strong> {{ cust.cust_id }} </p>
+    <p><strong> Customer Address: </strong> {{ cust.address }} </p>
+    <p><strong> Customer Age: </strong> {{ cust.age }} </p>
+{% endfor %}
+</ul>

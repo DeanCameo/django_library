@@ -1,0 +1,13 @@
+<h1>Books Details</h1>
+<ul>
+{% for book in book_detail_list %}
+    <p><strong> Book Name: </strong> {{ book.book_name }} </p>
+    <p><strong> Book ID: </strong> {{ book.book_id }} </p>
+    <p><strong> Author Name: </strong> {{ book.author_name }} </p>
+    <p><strong> Published Date: </strong> {{ book.pub_date }} </p>
+    <p><strong> Aveilabel Amount: </strong> {{ book.amount }} </p>
+    <p><strong> Book Type: </strong> {{ book.book_type }} </p>
+    <p>-</p>
+
+{% endfor %}
+</ul>

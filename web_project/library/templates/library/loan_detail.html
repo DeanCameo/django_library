@@ -1,0 +1,9 @@
+<h1>Loans Details</h1>
+<ul>
+{% for loan in loan_detail_list %}
+    <p><strong> Customer ID: </strong> {{ loan.cust_id }} </p>
+    <p><strong> Book ID: </strong> {{ loan.book_id }} </p>
+    <p><strong> Loan Date: </strong> {{ loan.loan_date }} </p>
+    <p><strong> Return Date: </strong> {{ loan.return_date }} </p>
+{% endfor %}
+</ul>
